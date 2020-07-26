@@ -1,0 +1,153 @@
+:root{
+    --blue:#A6DCEF;
+    --yellow:#f2ec7c;
+    --pink:#ec0ca5;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   background-color: var(--blue);
+   font-family: 'Caveat', cursive;
+
+}
+button{
+    border: 0px;
+    background-color: white;
+}
+nav img{
+    width: 200px;
+    position: relative;
+    left: 10%;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav div{
+    position: relative;
+    left: 34.4%;
+    top: 120px;
+}
+nav button{
+    font-size:1.3em;
+    background-color:var(--yellow);
+    padding: 0.5em;
+}
+nav button:nth-child(1){
+    background-color:var(--pink);
+}
+
+
+#welcome {
+    width: 100%;
+    height:700px;
+    display: block;
+    position: relative;
+
+  }
+  #welcome::after {
+    content: "";
+    background: url("./Images/welcomePic.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  #welcome p{
+      margin-top: 2em;
+      width: 400px;
+      line-height: 1.4em;
+      font-size: 23px;
+  }
+  #welcome h1{
+      padding-top: 1.5em;
+  }
+  #menu{
+      position: absolute;
+      top: 25%;
+      display: flex;
+      display: none;
+
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .cake{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.69);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.69);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.69);
+    margin-right: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    width: 450px;
+    justify-content: center;
+  }
+  .cake h1{
+      text-align: center;
+  }
+  .cake img{
+      width: 400px;
+      margin-left: 1.5em;
+    height: 400px;
+    }
+  .cake p{
+      width: 400px;
+
+      line-height: 1.4em;
+      margin-left: 1em;
+
+  }
+#contact{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+    background-color: var(--yellow);
+    display: none;
+    position: absolute;
+    top:40%;
+    left:32%
+}
+#contact label{
+    font-size: 30px;
+    position: relative;
+    bottom:100%;
+    left: 10%;
+}
+#contact div{
+    position: relative;
+    top: 10%;
+}
+#contact input{
+    position: absolute;
+    left: 28%;
+    bottom: 70%;
+    width: 250px;
+
+
+    height:20px;
+    margin-bottom: 1em;
+}
+#contact textarea{
+   position: relative;
+   left: 13%;
+    bottom: 10%;
+   width: 250px;
+    height: 200px;
+    resize: none;
+}
+#contact button{
+    position: absolute; 
+    bottom: 4%;
+    left: 40%;
+    width: 100px;
+
+}
